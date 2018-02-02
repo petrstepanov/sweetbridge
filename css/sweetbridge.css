@@ -489,7 +489,7 @@ mark,
 
 h2 {
   margin-top: 2rem;
-  font-family: "aristotelica", Arial, Helvetica, sans-serif;
+  font-family: "dinbold", Arial, Helvetica, sans-serif;
   margin-bottom: 3.5rem;
   position: relative; }
   @media (min-width: 576px) {
@@ -6297,9 +6297,6 @@ strong {
     color: white;
     text-decoration: none; }
 
-.section-footer {
-  background-color: #333333; }
-
 .circle-link {
   display: block; }
   .circle-link img {
@@ -6320,7 +6317,7 @@ strong {
       .navbar-sweetbridge .navbar-brand img {
         height: 2.5rem; } }
   .navbar-sweetbridge .navbar-brand span {
-    font-family: "aristotelica", Arial, Helvetica, sans-serif;
+    font-family: "dinbold", Arial, Helvetica, sans-serif;
     font-size: 1.3125rem;
     margin-left: 1rem;
     margin-top: 0.4rem;
@@ -6341,13 +6338,14 @@ strong {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; } }
 
-@media (max-width: 575.98px) {
-  .navbar-sweetbridge .navbar-nav .nav-link {
-    padding-left: 2.75rem; } }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .navbar-sweetbridge .navbar-nav .nav-link {
-    padding-left: 3rem; } }
+.navbar-sweetbridge .navbar-nav .nav-link {
+  font-family: "dinbold", Arial, Helvetica, sans-serif; }
+  @media (max-width: 575.98px) {
+    .navbar-sweetbridge .navbar-nav .nav-link {
+      padding-left: 2.75rem; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-sweetbridge .navbar-nav .nav-link {
+      padding-left: 3rem; } }
 
 .navbar-sweetbridge .navbar-nav .nav-item {
   text-transform: uppercase;
@@ -6383,7 +6381,7 @@ strong {
       min-height: 30rem; } }
   .jumbotron-sweetbridge h1 {
     font-size: 1.75rem;
-    font-family: "aristotelica", Arial, Helvetica, sans-serif;
+    font-family: "dinbold", Arial, Helvetica, sans-serif;
     line-height: 0.8; }
     @media (min-width: 576px) {
       .jumbotron-sweetbridge h1 {
@@ -6396,20 +6394,28 @@ strong {
   display: none; }
 
 .card-sweetbridge {
-  box-shadow: 0 5px 30px 0 rgba(129, 75, 30, 0.2);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem; }
+  @media (min-width: 576px) {
+    .card-sweetbridge {
+      min-height: 13.1rem; } }
+  @media (min-width: 768px) {
+    .card-sweetbridge {
+      min-height: 11rem; } }
+  @media (min-width: 992px) {
+    .card-sweetbridge {
+      min-height: 12.3rem; } }
   .card-sweetbridge .card-body {
     padding: 1.8rem; }
   .card-sweetbridge .card-title {
     margin-top: 0.5rem;
-    font-family: "aristotelica", Arial, Helvetica, sans-serif;
+    font-family: "dinbold", Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.3125rem; }
   .card-sweetbridge .card-text {
     font-size: 0.75rem;
     opacity: 0.75;
-    margin-top: 1rem;
-    margin-bottom: 1.2rem; }
+    margin-top: 1rem; }
     .card-sweetbridge .card-text dd {
       margin-bottom: 0rem; }
     .card-sweetbridge .card-text dt {
@@ -6458,30 +6464,62 @@ strong {
       top: 0.5rem;
       left: -3rem; }
 
-.footer-bimmersticker {
-  background-color: #373a3e;
-  line-height: 5.3rem;
-  height: 5rem;
-  overflow: hidden; }
-  .footer-bimmersticker .logo-transparent {
-    width: 1.75rem;
-    height: 1.75rem;
-    vertical-align: -19%;
-    margin-right: 0.5rem; }
-  .footer-bimmersticker .logo-title {
+.footer-sweetbridge {
+  background-color: #333333; }
+  .footer-sweetbridge .footer-logo {
+    margin-top: 3rem;
+    width: 90%;
+    margin-bottom: 2.2rem; }
+  .footer-sweetbridge p {
     color: white;
-    opacity: 0.1;
-    font-family: "aristotelica", Arial, Helvetica, sans-serif;
-    font-size: 1.3125rem; }
-  .footer-bimmersticker a {
+    margin-top: 1rem;
+    font-family: "dinbold", Arial, Helvetica, sans-serif; }
+    @media (min-width: 992px) {
+      .footer-sweetbridge p {
+        margin-top: 3.6rem; } }
+  .footer-sweetbridge a {
+    color: white;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out; }
+    .footer-sweetbridge a:hover {
+      opacity: 1; }
+  .footer-sweetbridge ul {
+    list-style-type: none;
+    padding-left: 0; }
+    .footer-sweetbridge ul li {
+      margin-right: 1.5rem;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .footer-sweetbridge ul li {
+          display: block; } }
+  .footer-sweetbridge .contacts [class^="icon-"], .footer-sweetbridge .contacts [class*=" icon-"] {
+    font-size: 2rem;
+    vertical-align: -20%; }
+  .footer-sweetbridge .social, .footer-sweetbridge .copyright {
     color: white;
     opacity: 0.2;
-    margin-left: 2rem; }
-    .footer-bimmersticker a:hover {
-      text-decoration: none;
-      opacity: 0.4; }
-    .footer-bimmersticker a:last-child {
-      margin-left: 0.8rem; }
+    font-size: 0.75rem; }
+  .footer-sweetbridge .social, .footer-sweetbridge .copyright {
+    height: 4rem;
+    line-height: 4rem; }
+  .footer-sweetbridge .copyright {
+    line-height: 1rem;
+    height: 2.5rem; }
+    @media (min-width: 576px) {
+      .footer-sweetbridge .copyright {
+        height: 4rem;
+        line-height: 4rem; } }
+    @media (min-width: 576px) {
+      .footer-sweetbridge .copyright {
+        text-align: right; } }
+  .footer-sweetbridge .social [class^="icon-"], .footer-sweetbridge .social [class*=" icon-"] {
+    font-size: 1.25rem;
+    vertical-align: -15%; }
+  .footer-sweetbridge hr {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0;
+    margin-top: 3rem; }
 
 /**
  * Swiper 4.1.0
