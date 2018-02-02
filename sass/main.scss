@@ -191,6 +191,12 @@ strong {
   min-height: 14rem;
   color: white;
 
+  &.jumbotron-sweetbridge--mod {
+    background-image: url(./../img/background-bridge.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
   @include media-breakpoint-up(sm) {
     min-height: 18rem;
     background-position: calc(50% + 10rem) 100%;
@@ -386,7 +392,7 @@ strong {
   .contacts {
     [class^="icon-"], [class*=" icon-"] {
       font-size: 2rem;
-      vertical-align: -20%;      
+      vertical-align: -20%;
     }
   }
 

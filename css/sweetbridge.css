@@ -6368,6 +6368,10 @@ strong {
   background-repeat: no-repeat;
   min-height: 14rem;
   color: white; }
+  .jumbotron-sweetbridge.jumbotron-sweetbridge--mod {
+    background-image: url(./../img/background-bridge.jpg);
+    background-position: center;
+    background-size: cover; }
   @media (min-width: 576px) {
     .jumbotron-sweetbridge {
       min-height: 18rem;

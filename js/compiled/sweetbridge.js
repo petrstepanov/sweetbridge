@@ -21597,6 +21597,11 @@ $(document).ready(function() {
       // a poor man's stop video
       $("#video").attr('src',$videoSrc);
   });
+
+  // Switch jumbotron images
+  $('.jumbotron-sweetbridge').click(function(){
+    $(this).toggleClass('jumbotron-sweetbridge--mod');
+  });
 });
 
 // Initialize swiper
