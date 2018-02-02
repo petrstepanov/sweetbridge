@@ -6361,24 +6361,17 @@ strong {
   padding-bottom: 0.8rem; }
 
 .jumbotron-sweetbridge {
-  background-color: #e68839;
-  background-image: url(./../img/background-banner.jpg);
-  background-size: contain;
-  background-position: bottom center;
   background-repeat: no-repeat;
   min-height: 14rem;
-  color: white; }
-  .jumbotron-sweetbridge.jumbotron-sweetbridge--mod {
-    background-image: url(./../img/background-bridge.jpg);
-    background-position: center;
-    background-size: cover; }
+  color: white;
+  background-image: url(./../img/background-bridge.jpg);
+  background-position: center top;
+  background-size: cover; }
   @media (min-width: 576px) {
     .jumbotron-sweetbridge {
-      min-height: 18rem;
-      background-position: calc(50% + 10rem) 100%; } }
+      min-height: 18rem; } }
   @media (min-width: 768px) {
     .jumbotron-sweetbridge {
-      background-position: bottom center;
       min-height: 25rem; } }
   @media (min-width: 992px) {
     .jumbotron-sweetbridge {

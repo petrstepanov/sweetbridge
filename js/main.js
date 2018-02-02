@@ -18,9 +18,9 @@ $(document).ready(function() {
   });
 
   // Switch jumbotron images
-  $('.jumbotron-sweetbridge').click(function(){
-    $(this).toggleClass('jumbotron-sweetbridge--mod');
-  });
+  // $('.jumbotron-sweetbridge').click(function(){
+  //   $(this).toggleClass('jumbotron-sweetbridge--mod');
+  // });
 });
 
 // Initialize swiper

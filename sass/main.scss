@@ -183,27 +183,19 @@ strong {
 }
 
 .jumbotron-sweetbridge {
-  background-color: $orange;
-  background-image: url(./../img/background-banner.jpg);
-  background-size: contain;
-  background-position: bottom center;
   background-repeat: no-repeat;
   min-height: 14rem;
   color: white;
+  background-image: url(./../img/background-bridge.jpg);
+  background-position: center top;
+  background-size: cover;
 
-  &.jumbotron-sweetbridge--mod {
-    background-image: url(./../img/background-bridge.jpg);
-    background-position: center;
-    background-size: cover;
-  }
 
   @include media-breakpoint-up(sm) {
     min-height: 18rem;
-    background-position: calc(50% + 10rem) 100%;
   }
 
   @include media-breakpoint-up(md) {
-    background-position: bottom center;
     min-height: 25rem;
   }
 
