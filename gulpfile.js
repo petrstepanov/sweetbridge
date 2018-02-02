@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 gulp.task('scripts', function() {
   gulp.src(['./node_modules/jquery/dist/jquery.js',
             './node_modules/bootstrap/dist/js/bootstrap.js',
+            './node_modules/swiper/dist/js/swiper.js',
             './js/main.js'
     ])
     .pipe(plumber()) // prevents breaking and has to go first here
@@ -24,6 +25,7 @@ gulp.task('scripts', function() {
 
   gulp.src(['./node_modules/jquery/dist/jquery.js',
             './node_modules/bootstrap/dist/js/bootstrap.js',
+            './node_modules/swiper/dist/js/swiper.js',
             './js/main.js'
     ])
     .pipe(plumber()) // prevents breaking and has to go first here
