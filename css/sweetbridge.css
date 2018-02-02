@@ -6270,6 +6270,19 @@ strong {
   background-size: cover;
   background-position: center; }
 
+.section-orange {
+  background-color: #e68839; }
+  .section-orange a {
+    color: white;
+    text-decoration: none; }
+
+.circle-link {
+  display: block; }
+  .circle-link img {
+    transition: all 0.2s ease-in-out; }
+  .circle-link:hover img {
+    transform: scale(1.1); }
+
 .navbar-sweetbridge .navbar-brand {
   color: #333333;
   display: flex;

@@ -54,6 +54,27 @@ strong {
   background-position: center;
 }
 
+.section-orange {
+  background-color: $orange;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.circle-link {
+  display: block;
+
+  img {
+    @include transition(all .2s ease-in-out);
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
 .navbar-sweetbridge {
   // @include box-shadow(0 0.375rem 1.6rem 0 rgba(0,0,0,0.28));
 
