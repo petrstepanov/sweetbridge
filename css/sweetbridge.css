@@ -490,8 +490,8 @@ mark,
 h2 {
   margin-top: 2rem;
   font-family: "aristotelica", Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 3.5rem;
+  position: relative; }
   @media (min-width: 576px) {
     h2 {
       margin-top: 2rem;
@@ -514,9 +514,11 @@ h2 {
     height: 0.1875rem;
     background: #e68839;
     position: absolute;
-    left: 50%;
-    margin-left: -2.5rem;
+    left: 0%;
     bottom: -1rem; }
+  h2.text-center:after {
+    left: 50%;
+    margin-left: -2.5rem; }
 
 .img-fluid {
   max-width: 100%;
@@ -3905,6 +3907,20 @@ button.close {
   .modal-lg {
     max-width: 800px; } }
 
+.modal.modal-nopadding .modal-content {
+  border-radius: 0; }
+  .modal.modal-nopadding .modal-content .modal-body {
+    padding: 0; }
+    .modal.modal-nopadding .modal-content .modal-body .close {
+      position: absolute;
+      right: -30px;
+      top: 0;
+      z-index: 999;
+      font-size: 2rem;
+      font-weight: normal;
+      color: #fff;
+      opacity: 1; }
+
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -6244,9 +6260,15 @@ strong {
 
 .section-what-is {
   background-color: #fae7d7;
-  padding-bottom: 8rem;
-  margin-bottom: -8rem;
+  padding-bottom: 7rem;
+  margin-bottom: -7rem;
   border-bottom: 2px solid #f1be94; }
+
+.section-handshake {
+  background-image: url(../img/background-handshake.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .navbar-sweetbridge .navbar-brand {
   color: #333333;
@@ -6337,7 +6359,7 @@ strong {
   display: none; }
 
 .card-sweetbridge {
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 30px 0 rgba(129, 75, 30, 0.2);
   margin-bottom: 2rem; }
   .card-sweetbridge .card-body {
     padding: 1.8rem; }
@@ -6366,6 +6388,31 @@ strong {
     opacity: 0.4; }
   .card-sweetbridge.coming-soon .card-img-soon {
     display: block; }
+
+.video-offset {
+  margin-top: 2rem; }
+  @media (min-width: 768px) {
+    .video-offset {
+      margin-top: 4rem; } }
+  @media (min-width: 992px) {
+    .video-offset {
+      margin-top: 3rem; } }
+
+.list-sweetbridge {
+  padding-left: 3rem;
+  list-style-type: none; }
+  .list-sweetbridge li {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative; }
+    .list-sweetbridge li:after {
+      content: attr(data-descr);
+      font-size: 1.75rem;
+      font-family: "dinbold", Arial, Helvetica, sans-serif;
+      opacity: 0.4;
+      position: absolute;
+      top: 0.5rem;
+      left: -3rem; }
 
 .footer-bimmersticker {
   background-color: #373a3e;
