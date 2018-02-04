@@ -230,46 +230,10 @@
                   }
                 }
               ?>
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <img src="https://cdn.magdeleine.co/wp-content/uploads/2018/01/allan-nygren-293261-500x375.jpg" alt=""/>
                 <div class="swiper-slide-text">
                   <h5>Unicorn ugh venmo</h5>
-                  <p><small>Cray green juice hammock sartorial letterpress. Man braid pickled fanny pack, XOXO single-origin coffee waistcoat health goth whatever DIY banh mi asymmetrical forage. Lo-fi locavore wolf beard vexillologist.</small></p>
-                </div>
-              </div>
-              <!-- <div class="swiper-slide" style="width: 20rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2018/01/annie-spratt-511071-500x375.jpg');">
-                <div class="swiper-slide-text">
-                  <h5>Narwhal cronut</h5>
-                  <p><small>Before they sold out pour-over XOXO, shaman offal leggings food truck. Shabby chic readymade vice, paleo typewriter vape pug VHS meh sriracha occupy viral hashtag.</small></p>
-                </div>
-              </div>
-              <div class="swiper-slide" style="width: 14rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2018/01/redd-angelo-95717-500x375.jpg');">
-                <div class="swiper-slide-text">
-                  <h5>Retro cardigan</h5>
-                  <p><small>Man braid pickled fanny pack, XOXO single-origin coffee waistcoat health goth whatever DIY.</small></p>
-                </div>
-              </div>
-              <div class="swiper-slide" style="width: 30rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2018/01/eberhard-grossgasteiger-456040-500x375.jpg');">
-                <div class="swiper-slide-text">
-                  <h5>Shaman messenger</h5>
-                  <p><small>Neutra scenester portland, 3 wolf moon leggings four dollar toast keytar enamel pin. Etsy beard.</small></p>
-                </div>
-              </div>
-              <div class="swiper-slide" style="width: 20rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2016/06/photo-1439894671367-1904e126d8f1-500x375.jpeg');">
-                <div class="swiper-slide-text">
-                  <h5>Shabby chic readymade</h5>
-                  <p><small>Chillwave biodiesel semiotics bespoke skateboard air plant vice franzen. Tilde messenger bag meditation affogato unicorn austin small batch.</small></p>
-                </div>
-              </div>
-              <div class="swiper-slide" style="width: 13rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2016/06/sW4FHZKlQ4qQLNTy3yS0__IMG0278-500x375.jpg');">
-                <div class="swiper-slide-text">
-                  <h5>Organic kickstarter </h5>
-                  <p><small>Man braid pickled fanny pack, XOXO single-origin coffee waistcoat health goth whatever DIY banh mi asymmetrical forage. Lo-fi locavore wolf beard vexillologist.</small></p>
-                </div>
-              </div>
-              <div class="swiper-slide" style="width: 17rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2016/06/photo-1461722936851-13a79b294a5d-860x683.jpeg');">
-                <div class="swiper-slide-text">
-                  <h5>Tumeric helvetica</h5>
                   <p><small>Cray green juice hammock sartorial letterpress. Man braid pickled fanny pack, XOXO single-origin coffee waistcoat health goth whatever DIY banh mi asymmetrical forage. Lo-fi locavore wolf beard vexillologist.</small></p>
                 </div>
               </div> -->
