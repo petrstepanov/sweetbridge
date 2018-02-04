@@ -489,7 +489,7 @@ mark,
 
 h2 {
   margin-top: 2rem;
-  font-family: "dinbold", Arial, Helvetica, sans-serif;
+  font-family: "aristotelica", Arial, Helvetica, sans-serif;
   margin-bottom: 3.5rem;
   position: relative; }
   @media (min-width: 576px) {
@@ -6317,7 +6317,7 @@ strong {
       .navbar-sweetbridge .navbar-brand img {
         height: 2.5rem; } }
   .navbar-sweetbridge .navbar-brand span {
-    font-family: "dinbold", Arial, Helvetica, sans-serif;
+    font-family: "aristotelica", Arial, Helvetica, sans-serif;
     font-size: 1.3125rem;
     margin-left: 1rem;
     margin-top: 0.4rem;
@@ -6378,7 +6378,7 @@ strong {
       min-height: 30rem; } }
   .jumbotron-sweetbridge h1 {
     font-size: 1.75rem;
-    font-family: "dinbold", Arial, Helvetica, sans-serif;
+    font-family: "aristotelica", Arial, Helvetica, sans-serif;
     line-height: 0.8; }
     @media (min-width: 576px) {
       .jumbotron-sweetbridge h1 {
@@ -6406,7 +6406,7 @@ strong {
     padding: 1.8rem; }
   .card-sweetbridge .card-title {
     margin-top: 0.5rem;
-    font-family: "dinbold", Arial, Helvetica, sans-serif;
+    font-family: "aristotelica", Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.3125rem; }
   .card-sweetbridge .card-text {
@@ -7128,20 +7128,30 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px; }
 
 .swiper-slide {
-  min-height: 18rem;
+  overflow: hidden;
   margin: 0 2rem 4rem 2rem;
   border-radius: 0.25rem;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: #e68839;
+  height: 18rem;
+  width: 18rem; }
+  .swiper-slide.has-img {
+    background-color: white;
+    width: auto; }
+    .swiper-slide.has-img .swiper-slide-text {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+8,1+66 */
+      background: -moz-linear-gradient(top, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+      /* IE6-9 */ }
+  .swiper-slide img {
+    height: 18rem; }
   .swiper-slide .swiper-slide-text {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+8,1+66 */
-    background: -moz-linear-gradient(top, transparent 1%, transparent 8%, black 66%, black 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, transparent 1%, transparent 8%, black 66%, black 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, transparent 1%, transparent 8%, black 66%, black 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
-    /* IE6-9 */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -7151,4 +7161,5 @@ button.swiper-pagination-bullet {
     .swiper-slide .swiper-slide-text h5 {
       font-family: "dinbold", Arial, Helvetica, sans-serif; }
     .swiper-slide .swiper-slide-text p {
-      line-height: 1.2; }
+      line-height: 1.2;
+      margin-bottom: 0.2rem; }

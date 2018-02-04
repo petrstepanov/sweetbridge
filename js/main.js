@@ -21,14 +21,14 @@ $(document).ready(function() {
   // $('.jumbotron-sweetbridge').click(function(){
   //   $(this).toggleClass('jumbotron-sweetbridge--mod');
   // });
-});
 
-// Initialize swiper
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
-  spaceBetween: 0,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // Initialize swiper
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });  
 });

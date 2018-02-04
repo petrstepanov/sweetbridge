@@ -199,15 +199,45 @@
           </div>
         </div>
         <div>
-          <div class="swiper-container swiper-container-autoheight">
+          <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" style="width: 26rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2018/01/allan-nygren-293261-500x375.jpg');">
+              <?php
+                require "getfeed.php";
+
+                if (isset($tweets)){
+                  for ($i = 0; $i < sizeof($tweets); $i++){
+                    $tweet = $tweets[$i];
+                    $text = $tweet->text;
+                    $username = $tweet->user->name;
+                    $has_img = false;
+                    // print_r($tweet);
+                    $entities = $tweet->entities;
+                    if (sizeof($entities->media)>0){
+                      $has_img = true;
+                      $media = $entities->media[0];
+                      $img_url = $media->media_url;
+                    } ?>
+                    <div class="swiper-slide <?php if ($has_img) echo 'has-img';?>">
+                      <?php if ($has_img){ ?>
+                        <img src="<?php echo $img_url; ?>" alt=""/>
+                      <?php } ?>
+                      <div class="swiper-slide-text">
+                        <h5><?php echo $username; ?></h5>
+                        <p><small><?php echo $text; ?></small></p>
+                      </div>
+                    </div>
+                    <?php
+                  }
+                }
+              ?>
+              <div class="swiper-slide">
+                <img src="https://cdn.magdeleine.co/wp-content/uploads/2018/01/allan-nygren-293261-500x375.jpg" alt=""/>
                 <div class="swiper-slide-text">
                   <h5>Unicorn ugh venmo</h5>
                   <p><small>Cray green juice hammock sartorial letterpress. Man braid pickled fanny pack, XOXO single-origin coffee waistcoat health goth whatever DIY banh mi asymmetrical forage. Lo-fi locavore wolf beard vexillologist.</small></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="width: 20rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2018/01/annie-spratt-511071-500x375.jpg');">
+              <!-- <div class="swiper-slide" style="width: 20rem; background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2018/01/annie-spratt-511071-500x375.jpg');">
                 <div class="swiper-slide-text">
                   <h5>Narwhal cronut</h5>
                   <p><small>Before they sold out pour-over XOXO, shaman offal leggings food truck. Shabby chic readymade vice, paleo typewriter vape pug VHS meh sriracha occupy viral hashtag.</small></p>
@@ -242,7 +272,7 @@
                   <h5>Tumeric helvetica</h5>
                   <p><small>Cray green juice hammock sartorial letterpress. Man braid pickled fanny pack, XOXO single-origin coffee waistcoat health goth whatever DIY banh mi asymmetrical forage. Lo-fi locavore wolf beard vexillologist.</small></p>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
