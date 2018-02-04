@@ -7133,19 +7133,40 @@ button.swiper-pagination-bullet {
   border-radius: 0.25rem;
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  background-color: #e68839;
+  background-color: #8b9aca;
   height: 18rem;
   width: 18rem; }
+  .swiper-slide:after {
+    content: "\e906";
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: absolute;
+    font-size: 1.3125rem;
+    left: 1.2rem;
+    top: 1.2rem;
+    color: black;
+    opacity: 0.15;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .swiper-slide.has-img {
     background-color: white;
     width: auto; }
+    .swiper-slide.has-img:after {
+      content: ""; }
     .swiper-slide.has-img .swiper-slide-text {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+8,1+66 */
-      background: -moz-linear-gradient(top, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 100%);
+      background: -moz-linear-gradient(top, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.65) 66%, rgba(0, 0, 0, 0.65) 100%);
       /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 100%);
+      background: -webkit-linear-gradient(top, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.65) 66%, rgba(0, 0, 0, 0.65) 100%);
       /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 100%);
+      background: linear-gradient(to bottom, transparent 1%, transparent 8%, rgba(0, 0, 0, 0.65) 66%, rgba(0, 0, 0, 0.65) 100%);
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
       /* IE6-9 */ }
@@ -7157,9 +7178,12 @@ button.swiper-pagination-bullet {
     left: 0;
     right: 0;
     color: white;
-    padding: 1.2rem 1.5rem; }
+    padding: 3rem 1.5rem 1.2rem 1.5rem; }
     .swiper-slide .swiper-slide-text h5 {
       font-family: "dinbold", Arial, Helvetica, sans-serif; }
     .swiper-slide .swiper-slide-text p {
       line-height: 1.2;
       margin-bottom: 0.2rem; }
+      .swiper-slide .swiper-slide-text p a {
+        color: white;
+        font-family: "dinbold", Arial, Helvetica, sans-serif; }

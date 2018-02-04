@@ -207,7 +207,7 @@
                 if (isset($tweets)){
                   for ($i = 0; $i < sizeof($tweets); $i++){
                     $tweet = $tweets[$i];
-                    $text = $tweet->text;
+                    $text = wrapLinks($tweet->text);
                     $username = $tweet->user->name;
                     $has_img = false;
                     // print_r($tweet);
