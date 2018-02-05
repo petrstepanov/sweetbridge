@@ -8,7 +8,6 @@ require "twitteroauth/autoload.php";
 use Abraham\TwitterOAuth\TwitterOAuth;
 
 if (!acessTokenExists()) {
-  echo "No access token"."<br/>";
   $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET);
 	$request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => OAUTH_CALLBACK));
 	$_SESSION['oauth_token'] = $request_token['oauth_token'];
